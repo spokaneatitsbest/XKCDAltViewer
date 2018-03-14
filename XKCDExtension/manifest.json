@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "XKCD Alt Text Viewer",
+  "description": "Views Alt Text",
+  "version": "1.0",
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" },
+   
+
+  "offline_enabled": true,
+
+  "author": "spokaneatitsbest",
+
+
+  "content_scripts": [
+    {
+	
+      "matches": ["http://*.xkcd.com/*", "https://*.xkcd.com/*"],
+      "js": ["myjs.js"]
+
+    }
+  ],
+   "permissions": [
+    "activeTab",
+    "storage"
+  ]
+  
+  }
+
